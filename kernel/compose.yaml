@@ -1,0 +1,9 @@
+version: "3"
+services:
+  linux-kernel:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: kernel
+    volumes:
+      - ./linux-5.4.275:/home/kernel
